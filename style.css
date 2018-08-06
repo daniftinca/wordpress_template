@@ -3,3 +3,50 @@
  Description:  Twenty Seventeen Child Theme
  Template:     twentyseventeen
 */
+
+.portfolio-content .heading-section{
+    position: relative;
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-content .heading-section .heading-info{
+    color: #fff;
+    width: 45%;
+    min-width: 500px;
+    padding: 100px 100px;
+
+}
+.portfolio-content .heading-section .heading-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.portfolio-content .heading-section .heading-image{
+    position: absolute;
+    bottom: -110px;
+    right: 150px;
+}
+
+.portfolio-item-section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.portfolio-item-section .portfolio-item{
+    width:100%;
+    margin-bottom: 40px;
+}
+.portfolio-item-section .portfolio-item.half{
+    width:50%;
+}
+
+.portfolio-item-section .portfolio-item .item-title{
+    color: #0ab39a;
+    font-weight:700;
+}
