@@ -26,12 +26,17 @@ Container::make( 'post_meta', 'Portfolio Item' )->where( 'post_template', '=', '
 						Field::make( 'image', 'icon' ),
 					) ),
 				Field::make( 'checkbox', 'half_content', 'Half Width?' )->set_option_value( 'yes' )
-			) )->add_fields( 'gallery_field', array(
-				Field::make( 'text', 'gallery_title' ),
-				Field::make( 'complex', 'gallery_content' )->add_fields( array(
-					Field::make( 'image', 'image' ),
-				) ),
-			) ),
+			) )->add_fields( 'single_gallery_field', array(
+
+
+					Field::make( 'text', 'gallery_shortcode' ),
+
+			) )->add_fields('multi_gallery_field',array(
+				Field::make('complex', 'galleries')->add_fields(array(
+					Field::make('text','gallery_title'),
+					Field::make( 'text', 'gallery_shortcode' ),
+				))
+			)),
 
 	) );
 
